@@ -10,7 +10,6 @@ import AboutMe from './AboutMe';
  * - shows header, nav links, and contains routes to:
  *  - homepage
  *  - about_me
- *  - resume
  */
 
 class App extends Component {
