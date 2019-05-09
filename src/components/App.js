@@ -13,27 +13,29 @@ import AboutMe from './AboutMe';
  *  - resume
  */
 
-function App() {
-  return (
-    <div className="app">
-    
-      <header className="app-header">
-        <h1 className="app-welcome"> Welcome to Stéphane's Personal Page</h1>
-        <p className="app-flavor">Dedicating myself to the world: from retreat into development.</p>
-        <nav>
-          <NavLink exact to="/">Home</NavLink>
-          <NavLink exact to="about">About Me</NavLink>
-        </nav>
-      </header>
+class App extends Component {
+  render() {
+    return (
+      <div className="app">
+      
+        <header className="app-header">
+          <h1 className="app-welcome"> Welcome to Stéphane's Personal Page</h1>
+          <p className="app-flavor">Dedicating myself to the world: from retreat into development.</p>
+          <nav>
+            <NavLink exact to="/">Home</NavLink>
+            <NavLink exact to="about">About Me</NavLink>
+          </nav>
+        </header>
 
-      <Switch>
-        <Route exact path="/about_me"
-               render={(props) => <AboutMe {...props} />} />
-        <Route exact path="/"
-               render={() => <Home />} />
-      </Switch>
-    </div>
-  );
+        <Switch>
+          <Route exact path="/about_me"
+                render={(props) => <AboutMe {...props} />} />
+          <Route exact path="/"
+                render={() => <Home />} />
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default App;
