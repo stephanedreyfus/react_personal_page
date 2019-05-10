@@ -2,14 +2,14 @@ import React, { Component} from 'react';
 import { Route, NavLink, Switch } from 'react-router-dom';
 import './App.css';
 
-import Home from './Home';
+import Home from '.';
 import AboutMe from './AboutMe';
 
 /** Overall site application:
  * 
  * - shows header, nav links, and contains routes to:
- *  - homepage
- *  - about_me
+ * - homepage
+ * - about_me
  */
 
 class App extends Component {
