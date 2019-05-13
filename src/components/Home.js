@@ -1,7 +1,44 @@
 import React, { Component } from 'react';
 import InfoBox from './InfoBox';
+import Project from './Project';
 
 class Home extends Component {
+  static defaultProps = {
+    about: {
+      title: "Background",
+      text: "Web developer experienced with ReactJS/Redux, Node.js, Express, JavaScript and Python. I'm always looking for opportunities to collaborate with other programmers. Feel free to browse around my portfolio and get in contact with me.",
+    },
+    skills: {
+      title: "Skills",
+      text: {
+        languages: {
+          title: "LANGUAGES",
+          lang1: "JavaScript",
+          lang2: "Python",
+          lang3: "CSS",
+          lang4: "HTML",
+          lang5: "SQL",
+        },
+        frameworks: {
+          title: "FRAMEWORKS",
+          lang1: "ReactJS",
+          lang2: "Node.js",
+          lang3: "Express",
+          lang4: "Flask",
+          lang5: "Django",
+        },
+        Libraries: {
+          title: "LIBRARIES",
+          lang1: "JQuery",
+          lang2: "React/Redux",
+        },
+        Databases: {
+          title: "DATABASES",
+          lang1: "PostgreSQL",
+        },
+      }
+    }
+  }
   render() {
     return (
       <main>
@@ -11,9 +48,11 @@ class Home extends Component {
           <a href="www.linkedin.com/in/stephane-dreyfus">LinkedIn</a>
           <a href="../media/stephane_dreyfus_resume.pdf">Resume</a>
         </div>
-        <InfoBox>
-
-        </InfoBox>
+        <InfoBox about={this.props.about}></InfoBox>
+        <InfoBox skills={this.props.skills}></InfoBox>
+        <div className="project-start">Recent Work and Projects</div>
+        <Project></Project>
+        <Project></Project>
       </main>
     )
   }
