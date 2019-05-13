@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import InfoBox from './InfoBox';
 import Project from './Project';
 
+/** Main page and props:
+ * This page is meant to hold the majority of the data
+ * on the site.
+ * - defaultProp data is passed to InfoBox children as props.
+ * - defaultProp data is passed to Project children as props.
+ */
+
 class Home extends Component {
   static defaultProps = {
     about: {
@@ -37,7 +44,15 @@ class Home extends Component {
           lang1: "PostgreSQL",
         },
       }
-    }
+    },
+    warbler: {
+      screenshot: "warbler image",
+      info_link: "Link to github or deployed site",
+    },
+    memory: {
+      screenshot: "memory game image",
+      info_link: "Link to github or deployed site",
+    },
   }
   render() {
     return (
