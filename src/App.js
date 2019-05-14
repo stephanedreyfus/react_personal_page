@@ -2,7 +2,7 @@ import React, { Component} from 'react';
 import { Route, NavLink, Switch } from 'react-router-dom';
 import './App.css';
 
-import Home from '.';
+import Home from './Home';
 import AboutMe from './AboutMe';
 
 /** Overall site application:
