@@ -66,8 +66,8 @@ class Home extends Component {
         <InfoBox about={this.props.about}></InfoBox>
         <InfoBox skills={this.props.skills}></InfoBox>
         <div className="project-start">Recent Work and Projects</div>
-        <Project></Project>
-        <Project></Project>
+        <Project warbler={this.props.warbler}></Project>
+        <Project memory={this.props.memory}></Project>
       </main>
     )
   }

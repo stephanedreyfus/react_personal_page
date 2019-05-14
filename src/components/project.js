@@ -10,6 +10,7 @@ class Project extends Component {
         </div>
         <div>
           {/* Content, Screenshot to hover to link */}
+          {this.props.screenshot}
         </div>
         <div>
           {/* Close curly brace */}
