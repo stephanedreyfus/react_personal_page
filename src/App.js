@@ -18,12 +18,13 @@ class App extends Component {
       <div className="app">
       
         <header className="app-header">
-          <h1 className="app-welcome"> Welcome to Stéphane's Personal Page</h1>
-          <p className="app-flavor">Dedicating myself to the world: from retreat into development.</p>
           <nav>
             <NavLink exact to="/">Home</NavLink>
             <NavLink exact to="about">About Me</NavLink>
           </nav>
+          <h1 className="app-welcome"> Welcome to Stéphane's Personal Page</h1>
+          <p className="app-blurb">Dedicating myself to the world: from retreat into development.</p>
+          <img className="personal-photo" src="" alt="personal_photo" />
         </header>
 
         <Switch>

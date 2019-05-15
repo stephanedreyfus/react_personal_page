@@ -17,33 +17,7 @@ class Home extends Component {
     },
     skills: {
       title: "Skills",
-      text: {
-        languages: {
-          title: "LANGUAGES",
-          lang1: "JavaScript",
-          lang2: "Python",
-          lang3: "CSS",
-          lang4: "HTML",
-          lang5: "SQL",
-        },
-        frameworks: {
-          title: "FRAMEWORKS",
-          lang1: "ReactJS",
-          lang2: "Node.js",
-          lang3: "Express",
-          lang4: "Flask",
-          lang5: "Django",
-        },
-        Libraries: {
-          title: "LIBRARIES",
-          lang1: "JQuery",
-          lang2: "React/Redux",
-        },
-        Databases: {
-          title: "DATABASES",
-          lang1: "PostgreSQL",
-        },
-      }
+      text: "How to get the skills in here?",
     },
     warbler: {
       screenshot: "warbler image",
@@ -62,8 +36,8 @@ class Home extends Component {
           <a href="https://www.linkedin.com/in/stephane-dreyfus/">LinkedIn</a>
           <a href="../media/stephane_dreyfus_resume.pdf">Resume</a>
         </div>
-        <InfoBox about={this.props.about}></InfoBox>
-        <InfoBox skills={this.props.skills}></InfoBox>
+        <InfoBox info={this.props.about}></InfoBox>
+        <InfoBox info={this.props.skills}></InfoBox>
         <div className="project-start">Recent Work and Projects</div>
         <Project warbler={this.props.warbler}></Project>
         <Project memory={this.props.memory}></Project>
@@ -73,3 +47,30 @@ class Home extends Component {
 }
 
 export default Home;
+
+// {
+//   languages: {
+//     title: "LANGUAGES",
+//     lang1: "JavaScript",
+//     lang2: "Python",
+//     lang3: "CSS",
+//     lang4: "HTML",
+//     lang5: "SQL",
+//   },
+//   frameworks: {
+//     title: "FRAMEWORKS",
+//     lang1: "ReactJS",
+//     lang2: "Node.js",
+//     lang3: "Express",
+//     lang4: "Flask",
+//     lang5: "Django",
+//   },
+//   Libraries: {
+//     title: "LIBRARIES",
+//     lang1: "JQuery",
+//     lang2: "React/Redux",
+//   },
+//   Databases: {
+//     title: "DATABASES",
+//     lang1: "PostgreSQL",
+//   },

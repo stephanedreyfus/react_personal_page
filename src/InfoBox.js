@@ -5,14 +5,14 @@ class InfoBox extends Component {
     return (
       <div className="info-box">
         <div>
-          {this.props.title}
+          {this.props.info.title}
         </div>
         <div>
           {/* Open curlly brace */}
           <img className="curly_brace" src="" alt="curly_brace" />
         </div>
         <div>
-          {this.props.text}
+          {this.props.info.text}
         </div>
         <div>
           {/* Close curly brace */}
