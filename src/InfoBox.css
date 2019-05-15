@@ -1,0 +1,12 @@
+.info-box {
+    display: flex;
+    border: 1px;
+    border-radius: 30%;
+    box-shadow: 1rem, 1rem, grey;
+    background: #885472
+}
+
+.brace {
+    height: 10rem;
+    width: 3rem;
+}

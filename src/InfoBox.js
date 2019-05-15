@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './InfoBox.css';
 
 class InfoBox extends Component {
   render() {
@@ -7,14 +8,14 @@ class InfoBox extends Component {
         <div>
           {this.props.info.title}
         </div>
-        <div>
+        <div className="brace">
           {/* Open curlly brace */}
           <img className="curly_brace" src="" alt="curly_brace" />
         </div>
         <div>
           {this.props.info.text}
         </div>
-        <div>
+        <div className="brace">
           {/* Close curly brace */}
           <img className="curly_brace" src="" alt="curly_brace" />
         </div>

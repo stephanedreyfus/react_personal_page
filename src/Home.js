@@ -30,11 +30,11 @@ class Home extends Component {
   }
   render() {
     return (
-      <main>
+      <main className="main">
         <div className="info-links">
           <a href="https://github.com/stephanedreyfus">GitHub</a>
           <a href="https://www.linkedin.com/in/stephane-dreyfus/">LinkedIn</a>
-          <a href="../media/stephane_dreyfus_resume.pdf">Resume</a>
+          <a href="/stephane_dreyfus_resume.pdf">Resume</a>
         </div>
         <InfoBox info={this.props.about}></InfoBox>
         <InfoBox info={this.props.skills}></InfoBox>
