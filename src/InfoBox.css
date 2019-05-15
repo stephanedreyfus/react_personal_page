@@ -1,12 +1,12 @@
 .info-box {
     display: flex;
     border: 1px;
-    border-radius: 30%;
-    box-shadow: 1rem, 1rem, grey;
-    background: #885472
+    border-radius: 10%;
+    box-shadow: 2rem, 2rem, rgb(46, 45, 45);
+    background: #817d7f
 }
 
 .brace {
-    height: 10rem;
-    width: 3rem;
+    height: 8rem;
+    width: 2rem;
 }
