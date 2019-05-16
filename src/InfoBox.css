@@ -1,12 +1,3 @@
-.info-box {
-    display: flex;
-    border: 1px;
-    border-radius: 10%;
-    box-shadow: 2rem, 2rem, rgb(46, 45, 45);
-    background: #817d7f
-}
-
-.brace {
-    height: 8rem;
-    width: 2rem;
+.card {
+    width: 18rem;
 }
