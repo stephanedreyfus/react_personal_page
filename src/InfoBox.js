@@ -19,7 +19,7 @@ class InfoBox extends Component {
           {/* Close curly brace */}
           <img className="curly_brace" src="" alt="curly_brace" />
         </div>
-        <div className="card">
+        <div className="Card">
           <img src="..." className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title">Card title</h5>
