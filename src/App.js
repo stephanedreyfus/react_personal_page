@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, NavLink, Switch } from 'react-router-dom';
 import './App.css';
 import {
   Collapse,
@@ -7,7 +7,7 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
-  NavLink,
+  NavbarBrand,
 } from 'reactstrap';
 
 import Home from './Home';
@@ -43,14 +43,15 @@ class App extends Component {
       
         <header className="app-header">
           <Navbar color="light" light expand="md">
+          <NavbarBrand href="/">stéphanedreyfus.com</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml=auto" navbar>
               <NavItem>
-                <NavLink exact to="/" className="nav-link">Home</NavLink>
+                <NavLink to="/" className="nav-link">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink exact to="about" className="nav-link">About Me</NavLink>
+                <NavLink to="about" className="nav-link">About Me</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
