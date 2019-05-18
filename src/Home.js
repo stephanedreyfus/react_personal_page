@@ -31,6 +31,11 @@ class Home extends Component {
   render() {
     return (
       <main className="main">
+        <div className="welcome container">
+          <h1 className="app-welcome"> Welcome to Stéphane's Personal Page</h1>
+          <p className="app-blurb">Dedicating myself to the world: from retreat into development.</p>
+          <img className="personal-photo" src="" alt="personal_photo" />
+        </div>
         <div className="info-links">
           <a href="https://github.com/stephanedreyfus">GitHub</a>
           <a href="https://www.linkedin.com/in/stephane-dreyfus/">LinkedIn</a>
