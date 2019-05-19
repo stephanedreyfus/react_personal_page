@@ -25,7 +25,7 @@ class App extends Component {
     return (
       <div className="app">
         <header>
-          <nav className="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+          <Navbar className="b-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
             <div className="container">
               <a className="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
               <button className="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +46,7 @@ class App extends Component {
                 </ul>
               </div>
             </div>
-          </nav>
+          </Navbar>
         </header>
 
         <Switch>
