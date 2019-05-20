@@ -39,6 +39,7 @@ class Home extends Component {
         <div className="info-links">
           <a href="https://github.com/stephanedreyfus">GitHub</a>
           <a href="https://www.linkedin.com/in/stephane-dreyfus/">LinkedIn</a>
+          {/* FIXME Make sure this is an up to date resume */}
           <a href="/public/stephane_dreyfus_resume.pdf">Resume</a>
         </div>
         <InfoBox info={this.props.about}></InfoBox>
